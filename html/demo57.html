@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:rebeccapurple;
+        }
+        #outer
+        {
+            min-height:600px;
+            width:500px;
+            background:white;
+            margin:50px auto;
+            border-radius:10px;
+            padding:50px;
+            color:white;
+            box-sizing:border-box;
+            box-shadow:0px 0px 30px 5px grey;
+            font-family:digital-7;
+
+        }
+        textarea
+        {
+            resize:none;
+            height:110px;
+            width:380px;
+            font-size:70px;
+            text-align:right;
+            padding:10px;
+            box-sizing:border-box;
+            border-radius:6px;
+            margin:0px 10px;
+        }
+        .row
+        {
+            height:100px;
+            width:400px;
+        }
+        .col
+        {
+            height:80px;
+            width:80px;
+            float:left;
+            background:white;
+            margin:10px;
+            border-radius:6px;
+            font-size:60px;
+            color:black;
+            text-align:center;
+            line-height:80px;
+            font-weight:bold;
+            box-shadow:5px 5px 2px grey inset,-5px -5px 2px black inset;
+
+        }
+        .org
+        {
+            background:orangered;
+            color:white;
+        }
+        .b{
+            background:rebeccapurple;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+    <textarea>0</textarea>
+    <div class="row">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col border-radius">+</div>
+    </div>
+    <div class="row">
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
+        <div class="col b">-</div>
+    </div>
+    <div class="row">
+        <div class="col">7</div>
+        <div class="col">8</div>
+        <div class="col">9</div>
+        <div class="col b">*</div>
+    </div>
+    <div class="row">
+        <div class="col">0</div>
+        <div class="col">.</div>
+        <div class="col b">X</div>
+        <div class="col org">=</div>
+    </div>
+    
+    </div>
+</body>
+</html>

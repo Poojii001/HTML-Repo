@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        
+            <img src="Tasks/images/a.png" id="im" alt="" style="height:200px">
+            <br/>
+            <input type="button" id="btn" onclick="demo()" value="ON"/>
+            <button onclick="demo1()">Start button</button>
+            <button onclick="demo1()">stop button</button>
+        
+    </center>
+    <script>
+        function demo()
+        {
+            var obj=document.getElementById("btn")
+            var img=document.getElementById("im")
+        
+        if(obj.value=="ON")
+        {
+            obj.value="OFF"
+            img.src="Tasks/images/b.jpg"
+            obj.style.background="red"
+            obj.style.color="white"
+        }
+        else{
+            obj.value="ON"
+            img.src="Tasks/images/a.png"
+            obj.style.background="green"
+            obj.style.color="white"
+        }
+    }
+        function demo1()
+        {
+        setInterval('demo()',2000)
+        }
+    </script>
+</body>
+</html>

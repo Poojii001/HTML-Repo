@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer
+        {
+        height:400px;
+        width:400px;
+        background:yellowgreen;
+        margin:50px auto;
+        position:relative;
+        }
+        #a,#b,#c,#d
+        {
+            height:100px;
+            width:100px;
+            background:green;
+            border-radius:50%;
+            position:absolute;
+        }
+        #a{
+            top:-50px;
+            left:-50px;
+        }
+        #b{
+            top:-50px;
+            right:-50px;
+        }
+        #c{
+            bottom:-50px;
+            left:-50px;
+        }
+        #d{
+            right:-50px;
+            bottom:-50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="a"></div>
+        <div id="b"></div>
+        <div id="c"></div>
+        <div id="d"></div>
+    </div>
+</body>
+</html>
